@@ -1,0 +1,27 @@
+.title-style {
+    color: white;
+}
+
+.nav h2 {
+    text-align: center; /* NOT WORKING */
+}
+
+
+#search-bttn {
+    background-color: rgb(84, 159, 230);
+    border: transparent;
+    color: white;
+}
+
+.form-control {
+    background-color: gray;
+}
+
+.current-weather {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+    

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+
+    <!-- Added Bootstrap CDN for styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <!-- Add jQuery CDN for JavaScript functionalities -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Add moment.js for time and date reference -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+<body>
+    <!-- Bootstrap Navbar for header -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(to right, #4470eb, #040833);">
+        <div class="container">
+                <h2 class="title-style">Weather Dashboard</h2>
+        </div>
+    </nav>
+    
+    <!-- Bootstrap layout for weather info -->   
+    <div class="container">
+        <!-- Bootstrap layout for city search and history --> 
+        <div class="row">
+            <div class="col-3">
+                <h4>Search for a City</h4>
+                <!-- city search box-->
+                <form id="city-search">
+                    <div><input type="text" id="city-name"> </div>
+                    <br>
+                    <div><input type="submit" id="search-bttn"> Search </div>
+                </form>
+                <br></br>
+                <!-- 
+                <button class="btn btn-outline-secondary border" type="button">
+                    <i class="fa fa-search"> test</i>
+                </button> -->
+
+                <!-- display searched city names in localStorage -->
+                <ul class="nav flex-colum" id="search">
+                    <input type="tex" class="form-control" id="history1" placeholder="">
+                    <br></br>
+                    <input type="tex" class="form-control" id="history2" placeholder="">
+                    <br></br>
+                    <input type="tex" class="form-control" id="history3" placeholder="">
+                    <br></br>
+                    <input type="tex" class="form-control" id="history4" placeholder="">
+                    <br></br>
+                    <input type="tex" class="form-control" id="history5" placeholder="">
+                    <br></br>
+                    <input type="tex" class="form-control" id="history6" placeholder="">
+                    <br></br>
+                    <input type="tex" class="form-control" id="history7" placeholder="">
+                    <br></br>
+                    <input type="tex" class="form-control" id="history8" placeholder="">
+                </ul> 
+            </div>
+        </div>
+
+        <!-- Bootstrap layout for current weather and 5-day forecast --> 
+        <div class="container">
+            <div class="col-9 current-weather">
+                <div><h4 id="city-name" id="date"></h4> </div>
+                <div id="temp"></div>
+                <div id="speed"></div>
+                <div id="humidity"></div>
+                <div id="index"></div>
+            </div>
+        </div>
+
+    
+        
+
+
+</body>
+</html>
