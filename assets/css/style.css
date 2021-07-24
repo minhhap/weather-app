@@ -7,10 +7,12 @@
 }
 
 
-#search-bttn {
+#response-container {
     background-color: rgb(84, 159, 230);
     border: transparent;
     color: white;
+    display: justify; /* EXPAND THE WIDTH OF SEARCH BOX */
+    /*HOW TO CREATE A BIT OF SPACE B/W SEARCH BOX AND SEARCH BUTTON */
 }
 
 .form-control {
@@ -24,4 +26,6 @@
     border: 1px solid grey;
 }
 
-    
+.card {
+    display: inline-block;
+}
