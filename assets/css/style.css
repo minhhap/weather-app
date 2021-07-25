@@ -1,16 +1,14 @@
 .title-style {
     color: white;
+    justify-content: center !important;
 }
-
-.nav h2 {
-    text-align: center; /* NOT WORKING */
-}
-
 
 #response-container {
     background-color: rgb(84, 159, 230);
     border: transparent;
     color: white;
+    width: 100%;
+    margin-top: 10px;
     display: justify; /* EXPAND THE WIDTH OF SEARCH BOX */
     /*HOW TO CREATE A BIT OF SPACE B/W SEARCH BOX AND SEARCH BUTTON */
 }
@@ -24,8 +22,14 @@
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid grey;
+    width: 500px; 
+    margin-left: 15px;
 }
 
 .card {
     display: inline-block;
+}
+
+#searchTerm {
+    width: 100%;
 }

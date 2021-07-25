@@ -24,8 +24,8 @@
 <body>
     <!-- Bootstrap Navbar for header -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(to right, #4470eb, #040833);">
-        <div class="container">
-                <h2 class="title-style">Weather Dashboard</h2>
+        <div class="container title-style">
+                <h2>Weather Dashboard</h2>
         </div>
     </nav>
     
@@ -34,7 +34,7 @@
         <!-- Bootstrap layout for city search and history column as two rows under city search column --> 
         <div class="row">
             <div class="col-3">
-                <h4>Search for a City</h4>
+                <h4>Search for a City:</h4>
                 <!-- city search box-->
                 <form id="city-search">
                     <div><input type="text" id="searchTerm"> </div>
@@ -48,82 +48,64 @@
                 
                 <!-- display searched city names in localStorage -->
                 <ul class="nav flex-colum" id="search">
-                    <input type="text" class="form-control" id="history1" placeholder="">
-                    <br></br>
-                    <input type="text" class="form-control" id="history2" placeholder="">
-                    <br></br>
-                    <input type="text" class="form-control" id="history3" placeholder="">
-                    <br></br>
-                    <input type="text" class="form-control" id="history4" placeholder="">
-                    <br></br>
-                    <input type="text" class="form-control" id="history5" placeholder="">
-                    <br></br>
-                    <input type="text" class="form-control" id="history6" placeholder="">
-                    <br></br>
-                    <input type="text" class="form-control" id="history7" placeholder="">
-                    <br></br>
-                    <input type="text" class="form-control" id="history8" placeholder="">
                 </ul> 
                 
             </div>
-            
+
             <div>
                 <!-- Bootstrap layout for current weather and 5-day forecast as two rows in the same column --> 
                 <div class="container">
                     <div class="col-9 current-weather">
                         <!-- Bootstrap layout for current weather as the first row in the column --> 
-                        <div><h4 id="city-name" id="date"> </h4> </div>
+                        <div><h4 id="city-name"></h4> </div>
                         <div id="temp"></div>
                         <div id="speed"></div>
                         <div id="humidity"></div>
                         <div id="index"></div> 
-                    </div>    
-                        <!-- Bootstrap layout for 5-day forecast as the second row in the same column --> 
-                    <div class="container-fluid">
-                        <h4>5-Day Forecast:</h4>
+                        </div>    
+                            <!-- Bootstrap layout for 5-day forecast as the second row in the same column --> 
+                            <div class="container-fluid">
+                                <h4>5-Day Forecast:</h4>
 
-                        <div class="card text-white bg-dark mb-3" style="max-width: 9rem;">
-                            <div class="dayOne">
-                                <p class="icon"> test </p>
-                                <p class="temp"></p>
-                                <p class="speed"></p>
-                                <p class="humidity"></p>
-                            </div>
-                        </div>
+                                <div class="card text-white bg-dark mb-3" style="max-width: 9rem;">
+                                    <div id="dayOne"> </div>
+                                    <div id="dayOneIcon"> </div>
+                                    <div id="dayOneTemp"> test</div>
+                                    <div id="dayOneSpeed"></div>
+                                    <div id="dayOneHumidity"></div>
+                                </div>
 
-                        <div class="card text-white bg-dark mb-3" style="max-width: 9rem;">
-                            <div class="dayTwo">
-                                <p class="icon"> test </p>
-                                <p class="temp"></p>
-                                <p class="speed"></p>
-                                <p class="humidity"></p>
-                            </div>
-                        </div>
+                                <div class="card text-white bg-dark mb-3" style="max-width: 9rem;">
+                                    <div id="dayTwo"> </div>
+                                    <div id="dayTwoIcon"> </div>
+                                    <div id="dayTwoTemp"> test</div>
+                                    <div id="dayTwoSpeed"></div>
+                                    <div id="dayTwoHumidity"></div>
+                                </div>
 
-                        <div class="card text-white bg-dark mb-3" style="max-width: 9rem;">
-                            <div class="dayThree">
-                                <p class="icon">test</p>
-                                <p class="temp"></p>
-                                <p class="speed"></p>
-                                <p class="humidity"></p>
-                            </div>
-                        </div>
+                                <div class="card text-white bg-dark mb-3" style="max-width: 9rem;">
+                                    <div id="dayThree"> </div>
+                                    <div id="dayThreeIcon"> </div>
+                                    <div id="dayThreeTemp"> test</div>
+                                    <div id="dayThreeSpeed"></div>
+                                    <div id="dayThreeHumidity"></div>
+                                </div>
 
-                        <div class="card text-white bg-dark mb-3" style="max-width: 9rem;">
-                            <div class="dayFour">
-                                <p class="icon">test</p>
-                                <p class="temp"></p>
-                                <p class="speed"></p>
-                                <p class="humidity"></p>
-                            </div>
-                        </div>
+                                <div class="card text-white bg-dark mb-3" style="max-width: 9rem;">
+                                    <div id="dayFour"> </div>
+                                    <div id="dayFourIcon"> </div>
+                                    <div id="dayFourTemp"> test</div>
+                                    <div id="dayFourSpeed"></div>
+                                    <div id="dayFourHumidity"></div>
+                                </div>
 
-                        <div class="card text-white bg-dark mb-3" style="max-width: 9rem;">
-                            <div class="dayFive">
-                                <p class="icon">test</p>
-                                <p class="temp"></p>
-                                <p class="speed"></p>
-                                <p class="humidity"></p>
+                                <div class="card text-white bg-dark mb-3" style="max-width: 9rem;">
+                                    <div id="dayFive"> </div>
+                                    <div id="dayFiveIcon"> </div>
+                                    <div id="dayFiveTemp"> test</div>
+                                    <div id="dayFiveSpeed"></div>
+                                    <div id="dayFiveHumidity"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -132,8 +114,7 @@
         </div>
     </div>
    
-    <script src ="assets/js/homepage.js"></script>
-    
+    <script src ="assets/js/homepage.js"></script>  
 
 </body>
 </html>
