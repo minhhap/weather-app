@@ -1,5 +1,4 @@
-// get city search term and use .value to store its value
-
+// create a function to store city search terms using localStorage
 function pastCity(city) {
   localStorage.setItem("city-name", city);
   
@@ -11,6 +10,7 @@ function pastCity(city) {
   cityStorage.innerHTML=city;
 };
 
+// get city search term and use .value to store its value
 function myFunction () {
   var searchTerm = document.querySelector("#searchTerm").value; 
   event.preventDefault();
