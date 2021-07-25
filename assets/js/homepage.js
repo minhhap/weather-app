@@ -88,7 +88,3 @@ function myFunction () {
     })
   })  
 }
-  
-
-
-
