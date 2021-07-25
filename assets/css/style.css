@@ -9,8 +9,7 @@
     color: white;
     width: 100%;
     margin-top: 10px;
-    display: justify; /* EXPAND THE WIDTH OF SEARCH BOX */
-    /*HOW TO CREATE A BIT OF SPACE B/W SEARCH BOX AND SEARCH BUTTON */
+    margin-bottom: 10px;
 }
 
 .form-control {
@@ -24,12 +23,24 @@
     border: 1px solid grey;
     width: 500px; 
     margin-left: 15px;
+    line-height: 2;
 }
 
 .card {
     display: inline-block;
+    line-height: 2.5;
+    padding: 10px;
 }
 
 #searchTerm {
     width: 100%;
+}
+
+.futureDate {
+    font-weight: bold;
+    font-size: large;
+}
+
+#city-search {
+    border-bottom: 1px solid;
 }
